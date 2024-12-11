@@ -1,26 +1,227 @@
+/* General Reset */
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    background: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2f5;
     color: #333;
 }
 
+/* Header */
 .main-header {
     display: flex;
     justify-content: space-between;
-    background: #fff;
+    align-items: center;
+    background-color: #fff;
     padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.main-header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1877f2;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1rem;
+    background-color: #f5f5f5;
+}
+
+.user-menu .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid #ddd;
+}
+
+/* Sidebar */
+.sidebar-left, .sidebar-right {
+    width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.sidebar-left .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-left .user-info img {
+    margin-right: 10px;
+}
+
+.sidebar-left nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-left nav li {
+    margin-bottom: 10px;
+}
+
+.sidebar-left nav a {
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 1rem;
+    padding: 5px;
+    display: block;
+    transition: color 0.2s ease;
+}
+
+.sidebar-left nav a:hover {
+    color: #0056b3;
+}
+
+/* Main Content */
+main.content {
+    flex: 1;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.create-post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.create-post input {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    margin-left: 10px;
+    background-color: #f5f5f5;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-header .post-author {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.post-content p {
+    margin: 0 0 10px;
+}
+
+.post-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.post-content img:hover {
+    transform: scale(1.02);
+}
+
+/* Gallery */
+.gallery h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Overlay */
 .overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
+    right: 0;
+    bottom: 0;
     background: rgba(0, 0, 0, 0.8);
+    display: none;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
+}
+
+.overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.overlay .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
 }
