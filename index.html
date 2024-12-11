@@ -11,34 +11,35 @@
     <div class="logo">WIR-Netz</div>
     <input type="text" class="search-bar" placeholder="Suche nach Freunden, Gruppen..." />
     <div class="user-menu">
-        <img src="images/img1.jpg" alt="Profilbild" class="profile-pic" data-img="images/img1.jpg">
+        <img src="images/img1.jpg" alt="Profilbild" class="profile-pic clickable" data-img="images/img1.jpg">
     </div>
 </header>
 
 <div class="main-container">
     <aside class="sidebar-left">
         <div class="user-info">
-            <img src="images/img2.jpg" alt="User Profil" class="small-pic" data-img="images/img2.jpg">
+            <img src="images/img2.jpg" alt="User Profil" class="small-pic clickable" data-img="images/img2.jpg">
             <div>Dein Name</div>
         </div>
         <nav>
             <ul>
-                <li><a href="#" class="link-with-img" data-img="images/img3.jpg">Startseite</a></li>
-                <li><a href="gallery.html" class="link-with-img" data-img="images/img4.jpg">Bildergalerie</a></li>
-                <li><a href="#" class="link-with-img" data-img="images/img5.jpg">Gruppen</a></li>
-                <li><a href="#" class="link-with-img" data-img="images/img6.jpg">Veranstaltungen</a></li>
+                <li><a href="#" class="link-with-img clickable" data-img="images/img3.jpg">Startseite</a></li>
+                <li><a href="gallery.html" class="link-with-img clickable" data-img="images/img4.jpg">Bildergalerie</a></li>
+                <li><a href="#" class="link-with-img clickable" data-img="images/img5.jpg">Gruppen</a></li>
+                <li><a href="#" class="link-with-img clickable" data-img="images/img6.jpg">Veranstaltungen</a></li>
             </ul>
         </nav>
     </aside>
 
     <main class="content">
         <div class="create-post">
-            <img src="images/img1.jpg" alt="Profilbild" class="small-pic" data-img="images/img1.jpg">
+            <img src="images/img1.jpg" alt="Profilbild" class="small-pic clickable" data-img="images/img1.jpg">
             <input type="text" placeholder="Was möchtest du teilen?" />
         </div>
+        <!-- Beispielhafte Beiträge -->
         <div class="post">
             <div class="post-header">
-                <img src="images/img3.jpg" alt="Autor" class="small-pic" data-img="images/img3.jpg">
+                <img src="images/img3.jpg" alt="Autor" class="small-pic clickable" data-img="images/img3.jpg">
                 <div class="post-author">Freund A · vor 2 Std.</div>
             </div>
             <div class="post-content">
@@ -46,18 +47,53 @@
                 <img src="images/img2.jpg" alt="Beitragsbild" class="post-image clickable" data-img="images/img2.jpg">
             </div>
         </div>
+
+        <div class="post">
+            <div class="post-header">
+                <img src="images/img4.jpg" alt="Autor" class="small-pic clickable" data-img="images/img4.jpg">
+                <div class="post-author">Freundin B · vor 5 Std.</div>
+            </div>
+            <div class="post-content">
+                <p>Party am Abend - schaut mal vorbei!</p>
+                <img src="images/img7.jpg" alt="Partybild" class="post-image clickable" data-img="images/img7.jpg">
+            </div>
+        </div>
     </main>
+
+    <aside class="sidebar-right">
+        <h3>Vorgeschlagene Freunde</h3>
+        <ul class="suggestions">
+            <li>
+                <img src="images/img5.jpg" alt="Vorschlag 1" class="small-pic clickable" data-img="images/img5.jpg">
+                <span>Person X</span>
+            </li>
+            <li>
+                <img src="images/img6.jpg" alt="Vorschlag 2" class="small-pic clickable" data-img="images/img6.jpg">
+                <span>Person Y</span>
+            </li>
+        </ul>
+        
+        <h3>Weiterführende Links</h3>
+        <ul>
+            <li><a href="#" class="link-with-img clickable" data-img="images/img8.jpg">Impressum</a></li>
+            <li><a href="#" class="link-with-img clickable" data-img="images/img1.jpg">Datenschutz</a></li>
+            <li><a href="#" class="link-with-img clickable" data-img="images/img4.jpg">Kontakt</a></li>
+        </ul>
+    </aside>
 </div>
 
 <footer class="main-footer">
     <div>WIR-Netz © 2024</div>
 </footer>
+
+<!-- Lightbox/Overlay -->
 <div class="overlay" id="overlay">
     <div class="overlay-content">
         <span class="close-btn" id="closeOverlay">&times;</span>
         <img src="" alt="Vergrößertes Bild" id="overlayImage">
     </div>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
