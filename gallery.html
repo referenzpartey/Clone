@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIR-Netz - Galerie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="main-header">
+    <div class="logo">WIR-Netz</div>
+    <input type="text" class="search-bar" placeholder="Suche nach Freunden, Gruppen..." />
+    <div class="user-menu">
+        <img src="images/img1.jpg" alt="Profilbild" class="profile-pic clickable" data-img="images/img1.jpg">
+    </div>
+</header>
+
+<div class="main-container">
+    <main class="content gallery">
+        <h2>Bildergalerie</h2>
+        <div class="image-grid">
+            <img src="images/img1.jpg" alt="Bild 1" class="gallery-img clickable" data-img="images/img1.jpg">
+            <img src="images/img2.jpg" alt="Bild 2" class="gallery-img clickable" data-img="images/img2.jpg">
+            <img src="images/img3.jpg" alt="Bild 3" class="gallery-img clickable" data-img="images/img3.jpg">
+        </div>
+    </main>
+</div>
+<div class="overlay" id="overlay">
+    <div class="overlay-content">
+        <span class="close-btn" id="closeOverlay">&times;</span>
+        <img src="" alt="Vergrößertes Bild" id="overlayImage">
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

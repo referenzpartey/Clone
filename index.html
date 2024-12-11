@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>WIR-Netz - Startseite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="main-header">
+    <div class="logo">WIR-Netz</div>
+    <input type="text" class="search-bar" placeholder="Suche nach Freunden, Gruppen..." />
+    <div class="user-menu">
+        <img src="images/img1.jpg" alt="Profilbild" class="profile-pic" data-img="images/img1.jpg">
+    </div>
+</header>
+
+<div class="main-container">
+    <aside class="sidebar-left">
+        <div class="user-info">
+            <img src="images/img2.jpg" alt="User Profil" class="small-pic" data-img="images/img2.jpg">
+            <div>Dein Name</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="link-with-img" data-img="images/img3.jpg">Startseite</a></li>
+                <li><a href="gallery.html" class="link-with-img" data-img="images/img4.jpg">Bildergalerie</a></li>
+                <li><a href="#" class="link-with-img" data-img="images/img5.jpg">Gruppen</a></li>
+                <li><a href="#" class="link-with-img" data-img="images/img6.jpg">Veranstaltungen</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <div class="create-post">
+            <img src="images/img1.jpg" alt="Profilbild" class="small-pic" data-img="images/img1.jpg">
+            <input type="text" placeholder="Was möchtest du teilen?" />
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <img src="images/img3.jpg" alt="Autor" class="small-pic" data-img="images/img3.jpg">
+                <div class="post-author">Freund A · vor 2 Std.</div>
+            </div>
+            <div class="post-content">
+                <p>Ein sonniger Tag am Pool!</p>
+                <img src="images/img2.jpg" alt="Beitragsbild" class="post-image clickable" data-img="images/img2.jpg">
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer class="main-footer">
+    <div>WIR-Netz © 2024</div>
+</footer>
+<div class="overlay" id="overlay">
+    <div class="overlay-content">
+        <span class="close-btn" id="closeOverlay">&times;</span>
+        <img src="" alt="Vergrößertes Bild" id="overlayImage">
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
